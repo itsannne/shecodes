@@ -1,0 +1,117 @@
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+}
+.body {
+  margin: 20px;
+  font-size: 100%;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: black;
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    hsl(180, 7%, 97%) 0%,
+    rgb(167, 202, 207) 100%
+  );
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.search {
+  margin: 20px 50px auto;
+  display: block;
+  font-family: cursive;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.location-and-date {
+  width: 100%;
+  border: 15px solid;
+  padding: 5px;
+  border-image: url(images/images/venice.jpg) 30 round;
+}
+
+.location {
+  margin: 0;
+  font-size: 2em;
+  font-weight: 600;
+  color: #3d97a7;
+}
+.location:hover {
+  color: rgb(158, 162, 163);
+}
+.date-and-time {
+  font-style: italic;
+}
+.current-temperature {
+  width: 100%;
+  border: 3px solid whitesmoke;
+  display: flex;
+  text-align: center;
+  color: #3d97a7;
+}
+.current-temperature:hover {
+  color: rgb(158, 162, 163);
+}
+.current-temperature-icon {
+  flex-grow: 1.25;
+  text-align: center;
+  margin-top: 20px;
+}
+.current-temperature-content {
+  flex-grow: 1;
+  text-align: center;
+}
+.icon {
+  width: 9em;
+}
+.current-temperature-value {
+  font-size: 5.5em;
+  font-weight: 300;
+  display: block;
+  margin: auto;
+}
+.current-temperature-summary {
+  font-size: 1.25em;
+  display: block;
+  margin: 20px auto;
+}
+
+.current-stats {
+  width: 100%;
+  border: 3px solid whitesmoke;
+  display: grid;
+  text-align: center;
+}
+.weather-by-hour {
+  width: 100%;
+  border: 3px solid whitesmoke;
+  display: grid;
+  text-align: center;
+}
+
+.weather-six-days {
+  width: 100%;
+  border: 3px solid whitesmoke;
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .weather-six-days {
+    display: block;
+  }
+}
+@media screen and (min-width: 768px) {
+  .current-stats,
+  .current-temperature {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 1140px) {
+  .container {
+    width: 1120px;
+    margin: 20px auto;
+  }
+}
